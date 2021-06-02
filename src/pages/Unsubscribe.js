@@ -8,35 +8,37 @@ const Unsubscribe = () => {
   const pageDescription = 'If at any time you\'d like to unsubscribe from our mailing list, please enter your email address below.'
 
   const home_screen_bg = {
-    background: 'url(' + data.unsubscribe.img1+')',
-    backgroundSize:'cover',
-    minHeight:'84vh'
+    background: 'url(' + data.unsubscribe.img3+')  ',
+    backgroundSize:'cover', 
+  }
+
+  const home_screen = { 
+  position: "relative",
+  minHeight: "84vh",
+  zIndex: "3"
   }
 
 
   return (
-    <div className="home-screen p-5 bg-cover" style={home_screen_bg}>
+    <div style={home_screen}>
       <Meta title={pageTitle}/> 
-      <div className="container ms-auto w-100 pt-5">
-          <div className="unsubscribe p-2 m-auto  ">
+      <div className="mw-75 mx-auto text-white  bg-cover banner" style={home_screen_bg}>
+          <div className="container unsubscribe pt-5 m-auto  topbanner">
               <h1 className="fs-1 font-weight-bold fs-bold text-light pt-5">Unsubscribe :</h1>
               <p className=" fs-3 font-weight-bold fs-bold text-white">
                   {pageDescription}
               </p>
+              <form>
+                <div className="fade-in-up">
+                      <div className="input-group header_input"> 
+                          <input type="email" className="form-control p-2" size="60" placeholder="Email Address" required autoFocus ></input> 
+                      </div>
+                      <div className="input-group-btn text-center">
+                              <button type="submit" className="btn btn-danger p-2 px-5">Unsubscribe</button>
+                      </div>
+                </div>
+              </form>
           </div>
-
-          <form>
-            <div className="fade-in-up">
-                  <div className="input-group header_input"> 
-                      <input type="email" className="form-control p-2" size="60" placeholder="Email Address" required autoFocus ></input> 
-                  </div>
-                  <div className="input-group-btn text-center">
-                          <button type="submit" className="btn btn-danger p-2 px-5">Unsubscribe</button>
-                  </div>
-            </div>
-              
-          </form>
-
       </div>
     </div>
   )

@@ -5,16 +5,15 @@ const data = require('../data.json');
 const Contact = () => {
   
   const home_screen_bg = {
-    background: 'url(' + data.contact.img1 + ')',
-    backgroundSize: 'cover',
-    minHeight:'84vh'
+    background: 'url(' + data.contact.img3 + ') no-repeat',
+    backgroundSize: 'cover' 
   }
 
   return (
-    <div className="home-screen p-5 bg-cover" style={home_screen_bg}>
+    <div className="home-screen ">
       <Meta title={data.contact.pagetitle}/>
-      <div className="mw-75 mx-auto text-white ">
-            <div className="container ms-auto w-100 ">
+      <div className="mw-75 mx-auto text-white  bg-cover banner" style={home_screen_bg}>
+            <div className="container ms-auto w-100 topbanner">
                 <div className="unsubscribe p-2 m-auto  ">
                     <h1 className="fs-1 font-weight-bold fs-bold text-light pt-5 pb-3">{data.contact.pagetitle}:</h1>
                     <p className=" fs-3 font-weight-bold fs-bold text-white">
@@ -23,7 +22,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="form-div m-6 mw-50 mx-auto fade-in-up">
+            <div className="form-div m-6 mw-50 mx-auto fade-in-up topbanner">
                 <form >
                     <div className="form-group form-control-lg">
                       <label for="exampleInputfirstname">First Name:</label>

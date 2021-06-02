@@ -10,7 +10,7 @@ import Unsubscribe from './pages/Unsubscribe'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound' 
 
- 
+ // little function for scrooling. 
 $(window).scroll(function() {
   $(".slideanim").each(function(){
     var pos = $(this).offset().top;
@@ -20,8 +20,6 @@ $(window).scroll(function() {
     }
   });
 });
-
- 
 
 const App = () => {
   return ( 
@@ -33,16 +31,10 @@ const App = () => {
             <Route path='/unsubscribe' component={Unsubscribe} />
             <Route path='/contact' component={Contact} />
             <Route component={NotFound} />
-            
           </Switch>  
       <Footer />
     </Router>
-
-    
   )
-   
-
-
 }
 
 export default App
