@@ -17,7 +17,9 @@ const Home = ({ pageTitle, pageDescription }) => {
         <div className="bg-light home-screen" style={home_screen_bg}> 
           <Header pageTitle={pageTitle} pageDescription={pageDescription} />
         </div>
-        <Body pageTitle={pageTitle} pageDescription={pageDescription} />
+        <div className="maxwidth" > 
+          <Body pageTitle={pageTitle} pageDescription={pageDescription} />
+        </div>
     </div>
 
   )

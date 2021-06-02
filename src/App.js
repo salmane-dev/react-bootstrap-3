@@ -33,6 +33,7 @@ const App = () => {
             <Route path='/unsubscribe' component={Unsubscribe} />
             <Route path='/contact' component={Contact} />
             <Route component={NotFound} />
+            
           </Switch>  
       <Footer />
     </Router>
