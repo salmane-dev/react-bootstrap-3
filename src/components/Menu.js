@@ -13,12 +13,12 @@ const Menu = () => {
     color: data.header.menu.textColor
   }
 
-  const menu_item = "px-3 h5 menu_item m-auto"
+  const menu_item = "px-4 h5 menu_item m-auto mx-2 shadow rounded-pill "
   return (
-	<Navbar  variant='dark' expand='lg' style={nav_style} collapseOnSelect>
+	<Navbar  variant='dark' expand='lg' collapseOnSelect>
       <Container id="my_menu">
         <LinkContainer to='/'>
-          <Navbar.Brand className="h3">Template</Navbar.Brand>
+          <Navbar.Brand className={menu_item}>{window.location.hostname}</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls='basic-navbar-nav' className="bg-dark"/>
         <Navbar.Collapse id='basic-navbar-nav'>

@@ -11,7 +11,13 @@ html,body {
   margin: 0 auto;
 }
 .navbar-brand{
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+}
+
+
+.navbar .menu_item , .navbar-brand{ 
+  background-color: bisque ;
+  padding: 3px 10px;
 }
 
 .navbar .menu_item:hover {    
@@ -276,8 +282,7 @@ h4 {
   color: #fff;
 }
 .navbar {
-  margin-bottom: 0;
-  background-color: #f4511e;
+  margin-bottom: 0; 
   z-index: 9999;
   border: 0;
   font-size: 12px !important;
