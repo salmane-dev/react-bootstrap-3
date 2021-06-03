@@ -18,7 +18,7 @@ const Body = ({ img1,img2 }) => {
                   </div>
                   <div className="col-sm-4">
                     <span className="glyphicon glyphicon-signal logo slideanim  ">
-                          <img src={data.body.img1} alt="image" className="w-100"/>
+                          <img src={data.body.img1} alt="landing page 2" className="w-100"/>
                     </span>
                   </div>
                 </div>

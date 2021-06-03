@@ -5,10 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 const data = require('../data.json'); 
 
 const Menu = () => {
-
-  const nav_style = {
-    backgroundColor: data.header.menu.background
-  }
+ 
   const nav_item_style = {
     color: data.header.menu.textColor
   }
