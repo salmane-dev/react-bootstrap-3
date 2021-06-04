@@ -15,14 +15,12 @@ html,body {
 }
 
 
-.navbar .menu_item , .navbar-brand{ 
-  background-color: bisque ;
+.navbar .menu_item , .navbar-brand{  
   padding: 3px 10px;
 }
 
 .navbar .menu_item:hover {    
-    transition: 0.4s;
-    color: rgb(209, 209, 209);
+    transition: 0.4s; 
 }
 
 .banner{
@@ -244,18 +242,13 @@ h4 {
   font-style: normal;
 }
 .panel {
-  border: 1px solid #f4511e; 
+  border: 1px solid #ffffff; 
   border-radius:0 !important;
   transition: box-shadow 0.5s;
 }
 .panel:hover {
   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-}
-.panel-footer .btn:hover {
-  border: 1px solid #f4511e;
-  background-color: #fff !important;
-  color: #f4511e;
-}
+} 
 .panel-heading {
   color: #fff !important;
   background-color: #f4511e !important;

@@ -33,8 +33,8 @@ const Unsubscribe = () => {
                       <div className="input-group header_input"> 
                           <input type="email" className="form-control p-2" size="60" placeholder="Email Address" required autoFocus ></input> 
                       </div>
-                      <div className="input-group-btn text-center">
-                              <button type="submit" className="btn btn-danger p-2 px-5">Unsubscribe</button>
+                      <div className="input-group-btn  text-center">
+                              <button type="submit" className="btn p-2 px-5 bg-light">Unsubscribe</button>
                       </div>
                 </div>
               </form>

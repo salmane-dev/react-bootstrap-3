@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import $ from 'jquery'; 
+
+
 // page components
 import Menu from './components/Menu'
 import Footer from './components/Footer'
@@ -9,6 +11,8 @@ import Privacy from './pages/Privacy'
 import Unsubscribe from './pages/Unsubscribe'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound' 
+
+const data = require('./data.json'); 
 
  // little function for scrooling. 
 $(window).scroll(function() {
@@ -21,6 +25,22 @@ $(window).scroll(function() {
   });
 });
 
+
+//.menu_item a, 
+const Stylings = () => {
+
+    return(
+          <style dangerouslySetInnerHTML={{__html: `
+                    .jumbotron, .btn, .menu_item, .navbar .menu_item{
+                      backGround:`+ data.header.menu.background +`!important;
+                      color:`+ data.header.menu.textColor +`!important;
+                      font-weight: `+ 500 +`; 
+                }
+              `}} />
+        )
+}
+ 
+
 const App = () => {
   return ( 
     <Router>
@@ -31,7 +51,8 @@ const App = () => {
             <Route path='/unsubscribe' component={Unsubscribe} />
             <Route path='/contact' component={Contact} />
             <Route component={NotFound} />
-          </Switch>  
+          </Switch> 
+          <Stylings/> 
       <Footer />
     </Router>
   )
