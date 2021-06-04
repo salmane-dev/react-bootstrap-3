@@ -9,7 +9,7 @@ const Body = ({ img1,img2 }) => {
                 <div className="row">
                   <div className="col-sm-8 "> 
                       <p className="font-weight-light" style={{ fontSize:"1.4rem"}}> 
-                          You've found   { window.location.hostname +" "+ data.body.parag1} 
+                          You have Found   { window.location.hostname +" "+ data.body.parag1} 
                       </p>  
                       <p className="font-weight-light" style={{ fontSize:"1.4rem"}}> 
                             {data.body.parag2}  
