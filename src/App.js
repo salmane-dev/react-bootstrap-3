@@ -12,9 +12,7 @@ import Privacy from './pages/Privacy'
 import Unsubscribe from './pages/Unsubscribe'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound' 
-
-const data = require('./data.json'); 
-
+ 
  // little function for scrooling. 
 $(window).scroll(function() {
   $(".slideanim").each(function(){

@@ -2,9 +2,7 @@ import Meta from '../components/Meta'
 
 const data = require('../data.json'); 
 
-
-const inputfieldsstyling = "appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4  leading-tight focus:outline-none focus:bg-white"
-
+ 
 const Contact = () => {
   
   const home_screen_bg = {
