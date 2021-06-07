@@ -84,6 +84,11 @@ html,body {
   min-width: 400px
 }
 
+.form-div .form-group label{
+  font-size: 1.5rem;
+}
+
+
 .slideanim {visibility:hidden;}
 
 .fade-in-up, .fade-in-right, .fade-in-left{
