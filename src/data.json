@@ -6,7 +6,7 @@
     "img1":"https://images.unsplash.com/photo-1496307653780-42ee777d4833",
     "menu":{
       "background":"#ded0d04f",
-      "textColor":"black"
+      "textColor":"red"
     }
    },
   "body":{

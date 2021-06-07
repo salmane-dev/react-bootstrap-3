@@ -4,6 +4,7 @@ import $ from 'jquery';
 
 // page components
 import Menu from './components/Menu'
+import Styling from './components/Styling'
 import Footer from './components/Footer'
 // pages
 import Home from './pages/Home'
@@ -24,21 +25,6 @@ $(window).scroll(function() {
     }
   });
 });
-
-
-//.menu_item a, 
-const Stylings = () => {
-
-    return(
-          <style dangerouslySetInnerHTML={{__html: `
-                    .jumbotron, .btn, .menu_item, .navbar .menu_item{
-                      backGround:`+ data.header.menu.background +`!important;
-                      color:`+ data.header.menu.textColor +`!important;
-                      font-weight: `+ 500 +`; 
-                }
-              `}} />
-        )
-}
  
 
 const App = () => {
@@ -52,7 +38,7 @@ const App = () => {
             <Route path='/contact' component={Contact} />
             <Route component={NotFound} />
           </Switch> 
-          <Stylings/> 
+          <Styling/> 
       <Footer />
     </Router>
   )
